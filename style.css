@@ -1,0 +1,302 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #0b0b0b;
+    color: #f8eee9;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 20px 7%;
+    background: #0b0b0b;
+    border-bottom: 1px solid #c9a45c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #d4af68;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #f8eee9;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af68;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        radial-gradient(circle at center, #38252c 0%, #160f12 45%, #080808 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.welcome,
+.small-title {
+    color: #d4af68;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 90px);
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    color: #e5b9c6;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 550px;
+    margin: 0 auto 30px;
+    color: #d8cecf;
+    font-family: Arial, sans-serif;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    background: #d4af68;
+    color: #0b0b0b;
+    padding: 14px 28px;
+    text-decoration: none;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #e5b9c6;
+    transform: translateY(-2px);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.section h2,
+.contact-section h2 {
+    font-size: 45px;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+/* SERVICES */
+
+.services-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    padding: 35px 25px;
+    border: 1px solid #5d4a32;
+    background: #141414;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af68;
+}
+
+.service-card h3 {
+    color: #d4af68;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #cfc4c6;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about-section {
+    padding: 100px 7%;
+    background: #e5b9c6;
+    color: #171112;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-section .small-title {
+    color: #7b5a31;
+}
+
+.about-section h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+/* BOOKING */
+
+.booking-section {
+    background: #100d0e;
+}
+
+#bookingForm {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#bookingForm input,
+#bookingForm select {
+    width: 100%;
+    padding: 16px;
+    background: #1c191a;
+    border: 1px solid #5d4a32;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+#bookingForm input:focus,
+#bookingForm select:focus {
+    outline: none;
+    border-color: #d4af68;
+}
+
+#bookingForm .button {
+    margin-top: 10px;
+}
+
+#bookingMessage {
+    margin-top: 20px;
+    color: #e5b9c6;
+}
+
+/* CONTACT */
+
+.contact-section {
+    padding: 90px 7%;
+    text-align: center;
+    background: #181315;
+}
+
+.contact-section > p {
+    font-family: Arial, sans-serif;
+}
+
+.contact-details {
+    margin-top: 30px;
+    color: #d4af68;
+    font-family: Arial, sans-serif;
+}
+
+.contact-details p {
+    margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #050505;
+    color: #9f9698;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .section h2,
+    .contact-section h2,
+    .about-section h2 {
+        font-size: 35px;
+    }
+}ssss

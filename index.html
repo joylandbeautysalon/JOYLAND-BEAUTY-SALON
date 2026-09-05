@@ -1,216 +1,203 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Joyland Beauty Salon</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b0b0b;
-            color: white;
-        }
-
-        header {
-            background: #000;
-            padding: 22px;
-            text-align: center;
-            border-bottom: 1px solid #c9a227;
-        }
-
-        .logo-text {
-            color: #d4af37;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .tagline {
-            color: #d8a7b1;
-            margin-top: 8px;
-            font-size: 14px;
-        }
-
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-
-            background:
-                linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.85));
-        }
-
-        .hero h1 {
-            color: #d4af37;
-            font-size: 45px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 600px;
-            line-height: 1.7;
-            color: #eee;
-            font-size: 17px;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            background: #d4af37;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            background: #f0d36b;
-        }
-
-        .services {
-            padding: 60px 20px;
-            text-align: center;
-            background: #111;
-        }
-
-        .services h2 {
-            color: #d4af37;
-            font-size: 32px;
-            margin-bottom: 35px;
-        }
-
-        .service-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .service {
-            padding: 30px 20px;
-            background: #181818;
-            border: 1px solid #333;
-            border-radius: 10px;
-        }
-
-        .service h3 {
-            color: #d8a7b1;
-            margin-bottom: 12px;
-        }
-
-        .service p {
-            color: #ccc;
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            background: #000;
-            color: #aaa;
-        }
-
-        footer strong {
-            color: #d4af37;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <div class="logo-text">JOYLAND</div>
-        <div class="tagline">Beauty Salon</div>
-    </header>
-
-    <section class="hero">
-
-        <h1>JOYLAND BEAUTY SALON</h1>
-
-        <p>
-            Enhance. Beauty. Confidence.
-            <br><br>
-            More Than a Service. It's an Experience.
-        </p>
-
-        <a href="#services" class="button">
-            EXPLORE OUR SERVICES
-        </a>
-
-    </section>
-
-    <section class="services" id="services">
-
-        <h2>Our Services</h2>
-
-        <div class="service-container">
-
-            <div class="service">
-                <h3>💅 Nails</h3>
-                <p>
-                    Manicures, gel services, extensions
-                    and beautiful nail designs.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>👁️ Lashes & Brows</h3>
-                <p>
-                    Enhance your eyes with our lash
-                    and brow services.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>💆 Massage</h3>
-                <p>
-                    Relax, refresh and restore with
-                    our professional massage treatments.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>✨ Facials</h3>
-                <p>
-                    Give your skin the care and attention
-                    it deserves.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>💄 Makeup</h3>
-                <p>
-                    Professional makeup for your
-                    special moments.
-                </p>
-            </div>
-
+        <div class="logo">
+            JOYLAND
         </div>
 
-    </section>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#booking">Book Now</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO</p>
+
+                <h1>Joyland<br>Beauty Salon</h1>
+
+                <p class="tagline">
+                    Enhance. Beauty. Confidence.
+                </p>
+
+                <p class="intro">
+                    Where beauty meets confidence and every visit
+                    becomes an experience.
+                </p>
+
+                <a href="#booking" class="button">
+                    Book Your Appointment
+                </a>
+            </div>
+        </section>
+
+
+        <section id="services" class="section">
+            <p class="small-title">WHAT WE OFFER</p>
+
+            <h2>Our Services</h2>
+
+            <div class="services-container">
+
+                <div class="service-card">
+                    <h3>💅 Nails</h3>
+                    <p>
+                        Manicures, gel applications and beautiful
+                        nail enhancements.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>👁 Lashes</h3>
+                    <p>
+                        Enhance your eyes with beautiful,
+                        professional lash services.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>✨ Brows</h3>
+                    <p>
+                        Beautifully shaped and defined brows
+                        designed for you.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>🌸 Massage</h3>
+                    <p>
+                        Relax, release tension and give yourself
+                        time to breathe.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>🤍 Waxing</h3>
+                    <p>
+                        Professional waxing services for smooth,
+                        confident skin.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <p class="small-title">ABOUT JOYLAND</p>
+
+                <h2>More Than A Service.<br>It's An Experience.</h2>
+
+                <p>
+                    Joyland Beauty Salon is a space created to help
+                    you feel beautiful, confident and cared for.
+                    Every detail is designed with you in mind.
+                </p>
+
+                <p>
+                    Come as you are. Leave feeling like the best
+                    version of yourself.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="booking" class="section booking-section">
+            <p class="small-title">YOUR BEAUTY JOURNEY STARTS HERE</p>
+
+            <h2>Book An Appointment</h2>
+
+            <form id="bookingForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <select id="service" required>
+                    <option value="">Choose a Service</option>
+                    <option value="Nails">Nails</option>
+                    <option value="Lashes">Lashes</option>
+                    <option value="Brows">Brows</option>
+                    <option value="Massage">Massage</option>
+                    <option value="Waxing">Waxing</option>
+                </select>
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+                <input
+                    type="time"
+                    id="time"
+                    required
+                >
+
+                <button type="submit" class="button">
+                    Request Booking
+                </button>
+
+            </form>
+
+            <p id="bookingMessage"></p>
+        </section>
+
+
+        <section id="contact" class="contact-section">
+
+            <p class="small-title">GET IN TOUCH</p>
+
+            <h2>Contact Joyland</h2>
+
+            <p>We would love to hear from you.</p>
+
+            <div class="contact-details">
+                <p>📞 Phone: Coming Soon</p>
+                <p>💬 WhatsApp: Coming Soon</p>
+                <p>📍 Location: Coming Soon</p>
+                <p>📷 Instagram: Coming Soon</p>
+            </div>
+
+        </section>
+
+    </main>
+
 
     <footer>
-        <p>
-            © 2026 <strong>Joyland Beauty Salon</strong>
-        </p>
-        <p>
-            Enhance. Beauty. Confidence.
-        </p>
+        <p>© 2026 Joyland Beauty Salon. All Rights Reserved.</p>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
